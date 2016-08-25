@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: cloudconfig
+  profiles:
+      active: zookeeper,mysql
+  cloud:
+      config:
+        server:
+          git:
+            uri: https://git.oschina.net/pickear/spring-cloud-config-demo
+            searchPaths:
+            username:
+            password:

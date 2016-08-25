@@ -1,0 +1,13 @@
+
+###config
+server:
+  port: 8080
+
+spring:
+  application:
+    name: cloudconfig
+  cloud:
+    config:
+      profile: zookeeper,mysql
+      label: master
+      uri: http://localhost:8888
