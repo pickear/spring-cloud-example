@@ -1,0 +1,10 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: spring-cloud-sleuth-client
+  sleuth:
+    log:
+      json:
+        enabled: true
