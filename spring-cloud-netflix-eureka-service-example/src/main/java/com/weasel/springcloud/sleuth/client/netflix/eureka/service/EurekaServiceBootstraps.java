@@ -1,4 +1,4 @@
-package com.weasel.springcloud.netflix.eureka.service;
+package com.weasel.springcloud.sleuth.client.netflix.eureka.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.weasel.springcloud.zookeeper.server;
+package com.weasel.springcloud.sleuth.client.zookeeper.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

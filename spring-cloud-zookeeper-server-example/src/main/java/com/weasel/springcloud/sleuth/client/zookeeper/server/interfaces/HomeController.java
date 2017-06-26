@@ -1,4 +1,4 @@
-package com.weasel.springcloud.zookeeper.server.interfaces;
+package com.weasel.springcloud.sleuth.client.zookeeper.server.interfaces;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
