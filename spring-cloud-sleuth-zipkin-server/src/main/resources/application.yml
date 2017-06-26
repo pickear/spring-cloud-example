@@ -7,6 +7,7 @@ spring:
   sleuth:
     enabled: false
 
+
 logging:
   level:
     root: info
