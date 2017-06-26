@@ -46,6 +46,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zipkin</artifactId>
 		</dependency>
+		<!-- 如果需要将trace信息保存到es 添加zipkin-autoconfigure-storage-elasticsearch-http和okhttp配置 -->
 		<dependency>
 			<groupId>io.zipkin.java</groupId>
 			<artifactId>zipkin-autoconfigure-storage-elasticsearch-http</artifactId>
