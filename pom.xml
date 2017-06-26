@@ -25,6 +25,7 @@
         <module>spring-cloud-netflix-eureka-interfaces-example</module>
         <module>spring-cloud-sleuth-client</module>
         <module>spring-cloud-sleuth-server</module>
+        <module>spring-cloud-sleuth-zipkin-server</module>
     </modules>
 
 

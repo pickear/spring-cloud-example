@@ -1,10 +1,10 @@
 server:
-  port: 8090
-  contextPath: /spring-cloud-sleuth-client
+  port: 8091
+  contextPath: /spring-cloud-sleuth-server
 
 spring:
   application:
-    name: spring-cloud-sleuth-client
+    name: spring-cloud-sleuth-server
   sleuth:
     sampler:
       percentage: 1
@@ -12,8 +12,7 @@ spring:
     base-url: http://127.0.0.1:9411
     enabled: true
 
+
 logging:
   level:
     root: info
-
-
