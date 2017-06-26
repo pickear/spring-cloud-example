@@ -7,6 +7,15 @@ spring:
   sleuth:
     enabled: false
 
+zipkin:
+  storage:
+    type: elasticsearch
+    elasticsearch:
+      cluster: ${ES_CLUSTER:elastic_test}
+      hosts: ${ES_HOSTS:10.50.115.16:9200}
+      index: ${ES_INDEX:zipkin}
+      index-shards: ${ES_INDEX_SHARDS:5}
+      index-replicas: ${ES_INDEX_REPLICAS:1}
 
 logging:
   level:
