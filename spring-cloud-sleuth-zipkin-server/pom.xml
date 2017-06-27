@@ -23,6 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Camden.SR6</spring-cloud.version>
+		<zipkin.version>1.26.2</zipkin.version>
 	</properties>
 
 	<dependencies>
@@ -40,24 +41,30 @@
 		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-sleuth</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zipkin</artifactId>
 		</dependency>
 		<!-- 如果需要将trace信息保存到es 添加zipkin-autoconfigure-storage-elasticsearch-http和okhttp配置 -->
 		<dependency>
 			<groupId>io.zipkin.java</groupId>
 			<artifactId>zipkin-autoconfigure-storage-elasticsearch-http</artifactId>
-			<version>1.26.2</version>
-			<optional>true</optional>
+			<version>${zipkin.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.zipkin.java</groupId>
 			<artifactId>zipkin</artifactId>
-			<version>1.26.2</version>
+			<version>${zipkin.version}</version>
 		</dependency>
+		<!-- storage to mysql-->
+		<!--<dependency>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin-autoconfigure-storage-mysql</artifactId>
+			<version>${zipkin.version}</version>
+		</dependency>-->
+		<!--<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>-->
+		<!-- storage to mysql-->
 		<dependency>
 			<groupId>com.squareup.okhttp3</groupId>
 			<artifactId>okhttp</artifactId>

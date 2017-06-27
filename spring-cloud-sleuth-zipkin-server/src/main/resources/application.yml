@@ -7,15 +7,32 @@ spring:
   sleuth:
     enabled: false
 
+###########storage to mysql##########
+#zipkin:
+#  storage:
+#    type: mysql
+#    mysql:
+#      host: 127.0.0.1
+#      port: 3306
+#      username: root
+#      password: 5805703
+#      db: zipkin
+#      maxActive: 10
+#      useSsl: false
+
+
+#######storage to elasticsearch############
 zipkin:
   storage:
     type: elasticsearch
     elasticsearch:
-      cluster: ${ES_CLUSTER:elastic_test}
-      hosts: ${ES_HOSTS:10.50.115.16:9200}
+      cluster: ${ES_CLUSTER:elastic}
+      hosts: ${ES_HOSTS:127.0.0.1:9300}
       index: ${ES_INDEX:zipkin}
       index-shards: ${ES_INDEX_SHARDS:5}
       index-replicas: ${ES_INDEX_REPLICAS:1}
+
+
 
 logging:
   level:
@@ -24,4 +41,4 @@ logging:
       springframework:
         web:
           servlet:
-            DispatcherServlet: debug
+            DispatcherServlet: info
