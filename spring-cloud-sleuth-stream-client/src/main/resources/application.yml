@@ -1,0 +1,21 @@
+server:
+  port: 8093
+  contextPath: /spring-cloud-sleuth-stream-client
+
+spring:
+  application:
+    name: spring-cloud-sleuth-stream-client
+  sleuth:
+    sampler:
+      percentage: 1
+  rabbitmq:
+    host: 10.50.115.78
+    port: 5672
+    username: admin
+    password: admin
+
+logging:
+  level:
+    root: info
+
+

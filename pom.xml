@@ -26,6 +26,9 @@
         <module>spring-cloud-sleuth-client</module>
         <module>spring-cloud-sleuth-server</module>
         <module>spring-cloud-sleuth-zipkin-server</module>
+        <module>spring-cloud-sleuth-stream-client</module>
+        <module>spring-cloud-sleuth-stream-server</module>
+        <module>spring-cloud-sleuth-stream-zipkin-server</module>
     </modules>
 
 
