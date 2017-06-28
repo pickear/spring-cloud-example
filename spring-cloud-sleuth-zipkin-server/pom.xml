@@ -35,31 +35,27 @@
 			<groupId>io.zipkin.java</groupId>
 			<artifactId>zipkin-autoconfigure-ui</artifactId>
 		</dependency>
-		<!--<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-sleuth-zipkin-stream</artifactId>
-		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zipkin</artifactId>
 		</dependency>
 		<!-- 如果需要将trace信息保存到es 添加zipkin-autoconfigure-storage-elasticsearch-http和okhttp配置 -->
-		<dependency>
+		<!--<dependency>
 			<groupId>io.zipkin.java</groupId>
 			<artifactId>zipkin-autoconfigure-storage-elasticsearch-http</artifactId>
 			<version>${zipkin.version}</version>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>io.zipkin.java</groupId>
 			<artifactId>zipkin</artifactId>
 			<version>${zipkin.version}</version>
 		</dependency>
 		<!-- storage to mysql-->
-		<!--<dependency>
+		<dependency>
 			<groupId>io.zipkin.java</groupId>
 			<artifactId>zipkin-autoconfigure-storage-mysql</artifactId>
 			<version>${zipkin.version}</version>
-		</dependency>-->
+		</dependency>
 		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
@@ -70,10 +66,6 @@
 			<artifactId>okhttp</artifactId>
 			<version>3.8.1</version>
 		</dependency>
-		<!--<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-stream-binder-rabbit</artifactId>
-		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
