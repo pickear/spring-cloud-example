@@ -28,9 +28,9 @@ public class HelloController {
 
     @Autowired
     private Tracer tracer;
-
     @Autowired
     private SpanNamer spanNamer;
+
     @Autowired
     private BeanFactory beanFactory;
 
