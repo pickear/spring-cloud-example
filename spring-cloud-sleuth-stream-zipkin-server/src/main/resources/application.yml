@@ -12,6 +12,10 @@ spring:
     username: admin
     password: admin
 
+jasypt:
+  encryptor:
+    password: 666
+
 ###########storage to mysql##########
 zipkin:
   storage:
@@ -20,7 +24,7 @@ zipkin:
       host: 127.0.0.1
       port: 3306
       username: root
-      password: 5805703
+      password: ENC(ap132Za3UmAVFzhEttoB8A==)
       db: zipkin
       maxActive: 10
       useSsl: false

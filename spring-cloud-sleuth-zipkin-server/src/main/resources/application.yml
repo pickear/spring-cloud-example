@@ -7,30 +7,34 @@ spring:
   sleuth:
     enabled: false
 
+jasypt:
+  encryptor:
+    password: 666
+
 ###########storage to mysql##########
-#zipkin:
-#  storage:
-#    type: mysql
-#    mysql:
-#      host: 127.0.0.1
-#      port: 3306
-#      username: root
-#      password: 5805703
-#      db: zipkin
-#      maxActive: 10
-#      useSsl: false
+zipkin:
+  storage:
+    type: mysql
+    mysql:
+      host: 127.0.0.1
+      port: 3306
+      username: root
+      password: ENC(ap132Za3UmAVFzhEttoB8A==)
+      db: zipkin
+      maxActive: 10
+      useSsl: false
 
 
 #######storage to elasticsearch############
-zipkin:
-  storage:
-    type: elasticsearch
-    elasticsearch:
-      cluster: ${ES_CLUSTER:elastic}
-      hosts: ${ES_HOSTS:127.0.0.1:9300}
-      index: ${ES_INDEX:zipkin}
-      index-shards: ${ES_INDEX_SHARDS:5}
-      index-replicas: ${ES_INDEX_REPLICAS:1}
+#zipkin:
+#  storage:
+#    type: elasticsearch
+#    elasticsearch:
+#      cluster: ${ES_CLUSTER:elastic}
+#      hosts: ${ES_HOSTS:127.0.0.1:9300}
+#      index: ${ES_INDEX:zipkin}
+#      index-shards: ${ES_INDEX_SHARDS:5}
+#      index-replicas: ${ES_INDEX_REPLICAS:1}
 
 
 
