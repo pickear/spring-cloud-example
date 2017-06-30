@@ -37,20 +37,15 @@ public class HelloController {
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     public String hello(){
         logger.info("[server] reponse client hello...");
-        executorService.submit(new TraceRunnable(tracer,spanNamer,new Runnable(){
-            @Override
-            public void run() {
-                logger.info("[stream server]execut in thread pool...");
-            }
-        }));
+        new Thread(new TraceRunnable(tracer,spanNamer,()->{
+            logger.info("[server]execut in thread pool...");
+        })).start();
 
         Executor executor = new LazyTraceExecutor(beanFactory, executorService);
-        executor.execute(new Runnable() {
-            @Override
-            public void run() {
-                logger.info("[stream server]execut in lazyTraceExecutor...");
-            }
+        executor.execute(() -> {
+            logger.info("[server]execut in lazyTraceExecutor...");
         });
+
         return "hello";
     }
 }
