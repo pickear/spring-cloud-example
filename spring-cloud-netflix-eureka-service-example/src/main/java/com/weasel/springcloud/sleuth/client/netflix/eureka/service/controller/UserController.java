@@ -1,6 +1,6 @@
 package com.weasel.springcloud.sleuth.client.netflix.eureka.service.controller;
 
-import com.weasel.springcloud.sleuth.client.netflix.eureka.interfaces.User;
+import com.weasel.springcloud.netflix.eureka.interfaces.User;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

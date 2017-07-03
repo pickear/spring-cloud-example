@@ -1,4 +1,4 @@
-package com.weasel.springcloud.sleuth.client.netflix.eureka.interfaces;
+package com.weasel.springcloud.netflix.eureka.interfaces;
 
 /**
  * @author Dylan
